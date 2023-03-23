@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: maparigi <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: hrobin <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/03/14 17:13:05 by maparigi          #+#    #+#              #
-#    Updated: 2022/03/14 19:29:17 by maparigi         ###   ########.fr        #
+#    Created: 2022/03/14 17:13:05 by hrobin          #+#    #+#              #
+#    Updated: 2022/03/14 19:29:17 by hrobin         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,12 +16,12 @@ NAMEBONUS = checker
 
 CC = gcc
 
-MAIN = ./srcs/main.c 
+MAIN = ./srcs/main.c
 
 SRCS = ./srcs/utils.c ./srcs/parse.c ./srcs/sort_smalls.c \
 		./srcs/swap.c ./srcs/checks.c ./srcs/push.c \
 		./srcs/rotate.c ./srcs/reverse_rotate.c ./srcs/sort.c \
-		./srcs/sort_utils.c ./srcs/lis.c ./srcs/place.c 
+		./srcs/sort_utils.c ./srcs/lis.c ./srcs/place.c
 
 
 SRCSBONUS = ./bonus/checker.c \
@@ -47,7 +47,7 @@ ${NAME}:    ${OBJS} ${OBJSMAIN} ${LIBFT}
 	    ${CC} ${FLAGS} ${OBJS} ${OBJSMAIN} ${LIBFT} -o ${NAME}
 
 ${NAMEBONUS}:	${OBJS} ${OBJSBONUS} ${LIBFT}
-		${CC} ${FLAGS} ${OBJS} ${OBJSBONUS} ${LIBFT} -o ${NAMEBONUS} 
+		${CC} ${FLAGS} ${OBJS} ${OBJSBONUS} ${LIBFT} -o ${NAMEBONUS}
 
 all:    ${NAME}
 

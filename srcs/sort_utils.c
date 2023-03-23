@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   sort_utils.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: maparigi <maparigi@student.42.fr>          +#+  +:+       +#+        */
+/*   By: hrobin <hrobin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/27 00:04:02 by maparigi          #+#    #+#             */
-/*   Updated: 2022/04/29 21:26:02 by maparigi         ###   ########.fr       */
+/*   Created: 2022/03/27 00:04:02 by hrobin          #+#    #+#             */
+/*   Updated: 2023/03/23 17:48:46 by hrobin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	ft_smart_rotate(int	*a, int size, int i)
+void	ft_smart_rotate(int *a, int size, int i)
 {
 	if (i <= size / 2)
 		ft_ra(a, size, 0);
@@ -40,7 +40,7 @@ t_stack	ft_push_lis(t_stack a, int *lis, int sizelis)
 	j = 0;
 	i = -1;
 	while (++i < *a.size && j < sizecpy - sizelis + 1)
-	{		
+	{
 		if (ft_is_lis(lis, sizelis, a.arr[i]) == FALSE)
 		{
 			ft_ruf(a, i, a.arr[i]);

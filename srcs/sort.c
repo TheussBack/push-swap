@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   sort.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: maparigi <maparigi@student.42.fr>          +#+  +:+       +#+        */
+/*   By: hrobin <hrobin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/26 23:39:09 by maparigi          #+#    #+#             */
-/*   Updated: 2022/04/29 21:26:05 by maparigi         ###   ########.fr       */
+/*   Created: 2022/03/26 23:39:09 by hrobin          #+#    #+#             */
+/*   Updated: 2023/03/23 18:09:20 by hrobin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	ft_index(t_stack a, int n)
 	return (i);
 }
 
-int	ft_nb_moves(int	*tab)
+int	ft_nb_moves(int *tab)
 {
 	if (tab[0] * tab[1] > 0)
 	{
@@ -79,8 +79,8 @@ void	ft_sort(t_stack a)
 		while (*b.size > 0)
 			ft_best_move(a, b);
 		while (a.arr[0] != ft_smallest(a.arr, *a.size))
-			ft_smart_rotate(a.arr, *a.size,
-				ft_index(a, ft_smallest(a.arr, *a.size)));
+			ft_smart_rotate(a.arr, *a.size, ft_index(a, ft_smallest(a.arr,
+						*a.size)));
 		free(b.arr);
 		free(b.size);
 	}

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   sort_smalls.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: maparigi <maparigi@student.42.fr>          +#+  +:+       +#+        */
+/*   By: hrobin <hrobin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/25 17:45:51 by maparigi          #+#    #+#             */
-/*   Updated: 2022/04/29 21:25:58 by maparigi         ###   ########.fr       */
+/*   Created: 2022/04/25 17:45:51 by hrobin          #+#    #+#             */
+/*   Updated: 2023/03/23 17:48:35 by hrobin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ int	ft_sort_three(int *a, int size)
 		ft_sa(a, 0);
 		ft_ra(a, size, 0);
 	}
-	else if (a [0] < a[1] && a[0] > a[2])
+	else if (a[0] < a[1] && a[0] > a[2])
 		ft_rra(a, size, 0);
 	return (0);
 }
