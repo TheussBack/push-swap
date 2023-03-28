@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   utils.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hrobin <hrobin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/14 17:24:07 by hrobin            #+#    #+#             */
-/*   Updated: 2023/03/23 18:44:30 by hrobin           ###   ########.fr       */
+/*   Updated: 2023/03/28 21:01:28 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,8 @@ int	*ft_calloc(int size)
 	int	i;
 
 	ret = malloc(sizeof(int) * size);
+	if (!ret)
+		return (NULL);
 	i = 0;
 	while (i < size - 1)
 	{
